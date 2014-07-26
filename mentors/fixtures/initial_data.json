@@ -1,0 +1,54 @@
+[
+{
+    "pk": 1, 
+    "model": "mentors.company", 
+    "fields": {
+        "name": "iStrategyLabs"
+    }
+},
+{
+    "pk": 2, 
+    "model": "mentors.company", 
+    "fields": {
+        "name": "USAID"
+    }
+},
+{
+    "pk": 1, 
+    "model": "mentors.industry", 
+    "fields": {
+        "name": "Advertising & Marketing"
+    }
+},
+{
+    "pk": 1, 
+    "model": "mentors.degree", 
+    "fields": {
+        "name": "Astrophysics"
+    }
+},
+{
+    "pk": 1, 
+    "model": "mentors.mentor", 
+    "fields": {
+        "first_name": "Joe", 
+        "last_name": "Flasher", 
+        "degree": 1, 
+        "industry": 1, 
+        "email": "flasher@istrategylabs.com", 
+        "company": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "mentors.mentor", 
+    "fields": {
+        "first_name": "Christa", 
+        "last_name": "Hasenkopf", 
+        "degree": 1, 
+        "industry": 1, 
+        "email": "flasher@istrategylabs.com", 
+        "company": 2
+    }
+}
+]
