@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="shadowApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shadow Day</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body data-ng-controller="MainCtrl">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Shadow Day</a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>FIND A SHADOW FOR A DAY</h1>
+            </div>
+        </div> <!-- /.row -->
+
+        <div class="row" data-ng-show="showSearch">
+            <div class="col-lg-12 text-center">
+                <h4>I am interested in learning more about the <input type="text" id="industry-input" data-ng-enter="searchIndustry()" /> 
+                industry and would like to find someone to shadow for a day.</h4>
+            </div>
+        </div>
+
+        <div class="row" data-ng-show="showResults">
+            <div class="col-lg-12 text-center">
+                <div data-ng-repeat="mentor in mentors">
+                {{ mentor.first_name + ' ' + mentor.last_name[0] }}
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Angular.js -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>
