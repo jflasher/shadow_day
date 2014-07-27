@@ -1,4 +1,48 @@
+html { 
+  
+}
+
 body {
-    padding-top: 70px;
-    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+    background: url(../img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+}
+
+.mentor {
+    padding: 30px;
+}
+
+.mentor a, a:link, a:hover, a:active {
+    color: #000;
+}
+
+.fa {
+    margin: 0px 5px;
+    color: #FFF;
+}
+
+.or-sep {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.interest {
+    margin: 50px 0px;
+    font-weight: 300;
+    font-size: 2em;
+    line-height: 36px;
+}
+
+.heading {
+    padding: 30px;
+}
+
+.company {
+    font-weight: 300;
 }
