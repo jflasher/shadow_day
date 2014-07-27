@@ -1,8 +1,12 @@
 'use strict';
 
 // API root url
-// var apiRoot = 'http://ec2-54-225-111-214.compute-1.amazonaws.com/';
-var apiRoot = 'http://127.0.0.1:8000/';
+var apiRoot = '';
+if (window.location.hostname === 'localhost' || window.location.hostname === 'localhost') {
+  apiRoot = 'http://127.0.0.1:8000/';
+} else {
+  apiRoot = 'http://ec2-54-225-111-214.compute-1.amazonaws.com/';
+}
 
 var shadowApp = angular.module('shadowApp', []);
 
