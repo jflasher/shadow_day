@@ -1,4 +1,4 @@
-# shadow_day
+# Shadow for a Day
 A simple Django project utilizing DRF and a frontend to prototype out what a mentor/shadow match system might look like. Based on initial conversations at a 2014 OSTP Data Jam.
 
 
