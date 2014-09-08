@@ -7,9 +7,13 @@ You will need [Python 2.7.x](https://www.python.org/) installed, I am using 2.7.
 
 I'd recommend using [virtualenv](https://pypi.python.org/pypi/virtualenv) to isolate project requirements but it's not necessary.
 
-For local development, from the root directory, run the following command to install requirements.
+For local development, from the root directory, run the following command to install requirements (first time only)
 
     pip install -r requirements/development.txt
+    
+To create the database initially, run the below (first time only)
+    
+    python manage.py syncdb --settings=shadow_day.settings.development
 
 Once installation is complete, you can start the server with the following command
 
